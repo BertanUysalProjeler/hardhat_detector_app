@@ -1,6 +1,10 @@
 
 <img width="1282" height="523" alt="Ekran görüntüsü 2025-08-20 133230" src="https://github.com/user-attachments/assets/8bbb064b-c0b9-41e7-ac3d-6f8ea378b529" />
 
+
+https://github.com/user-attachments/assets/724f4b44-cdb3-4479-aa5f-b79e51411b56
+
+
 Real-time hardhat/no-hardhat detection with a FastAPI backend (YOLOv8) and an Electron + React desktop frontend. Supports local dev, packaged desktop app, and Dockerized backend.
 
 ### Features
@@ -124,6 +128,7 @@ See `docs/TRAIN_COLAB.md` for a full Google Colab walkthrough that trains a YOLO
 
 ### License
 MIT (or your preference)
+
 
 
 
