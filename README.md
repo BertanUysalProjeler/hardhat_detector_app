@@ -127,7 +127,8 @@ See `docs/TRAIN_COLAB.md` for a full Google Colab walkthrough that trains a YOLO
 - To launch backend automatically with the app, we can extend Electron main to spawn uvicorn; open an issue if you want that.
 
 ### License
-MIT (or your preference)
+MIT 
+
 
 
 
