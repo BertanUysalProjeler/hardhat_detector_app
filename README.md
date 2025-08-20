@@ -22,9 +22,6 @@ hardhat-detector/
       models.py           # SQLAlchemy models: Video, Detection
       worker.py           # background thread launcher
       ws_manager.py       # thread-safe WebSocket broadcaster
-    data/
-      uploads/           # uploaded videos (excluded from git)
-      app.db             # SQLite database (excluded from git)
     torch_model/
       README.md          # place best.pt here (excluded from git)
     requirements.txt
@@ -34,14 +31,11 @@ hardhat-detector/
     web/                 # React + Vite app (dev server & build)
     electron/            # Electron app wrapper (packaging config)
 
-  dataset/
-    data.yaml            # class names and dataset config
-    train|valid|test     # images/labels (excluded from git)
-
   docs/
     TRAIN_COLAB.md       # Google Colab training guide
 
-  .gitignore
+  package-lock.json
+  package.json
   README.md
 ```
 
@@ -129,6 +123,7 @@ See `docs/TRAIN_COLAB.md` for a full Google Colab walkthrough that trains a YOLO
 
 ### License
 MIT (or your preference)
+
 
 
 
