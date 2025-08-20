@@ -1,0 +1,36 @@
+{
+  "name": "hardhat-detector",
+  "version": "1.0.0",
+  "description": "Hardhat Detector Windows App",
+  "author": "Bertan Uysal",
+  "main": "main.js",
+  "scripts": {
+    "electron:dev": "cross-env ELECTRON_DEV=1 concurrently \"npm --prefix ../web run dev\" \"wait-on http://localhost:5713 && electron .\"",
+    "electron:pack": "npm --prefix ../web run build && electron-builder"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3",
+    "wait-on": "^7.2.0",
+    "cross-env": "^7.0.3"
+  },
+  "build": {
+    "appId": "com.hardhat.detector",
+    "files": [
+      "**/*",
+      "package.json",
+      "!dist/**"
+    ],
+    "directories": {
+      "buildResources": "build",
+      "output": "dist"
+    },
+    "extraResources": [
+      { "from": "../web/dist/", "to": "web" }
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
